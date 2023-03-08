@@ -2,6 +2,7 @@ import 'package:ecommerce/Routs.dart';
 import 'package:ecommerce/core/constant/colorApp.dart';
 import 'package:ecommerce/core/localization/Translation.dart';
 import 'package:ecommerce/core/services/servecies.dart';
+import 'package:ecommerce/view/screen/Language.dart';
 import 'package:ecommerce/view/screen/Onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
                  primarySwatch: Colors.blue,
 
       ),
-      home: Onboarding(),
+      home: Language(),
     );
   }
 }
