@@ -2,8 +2,24 @@ import 'package:ecommerce/core/constant/imageAsset.dart';
 import 'package:ecommerce/data/model/onboardingmodel.dart';
 
 List<onboardingmodel> onboardingmodelList=[
-  onboardingmodel(title: "Choose product",image: AppImageAsset.onboardingone,body: "We Have 100 product\nyour product from our E-commerce Shop"),
-  onboardingmodel(title: "Easy & safe payment",image: AppImageAsset.onboardingtwo,body: "Easy checkout & safe paymrny \n method Trusted our customers"),
-  onboardingmodel(title: "Track Your Order",image: AppImageAsset.onboardingthree,body: "Track Your Order \n method Trusted our customers"),
-  onboardingmodel(title: "Fast Delivery",image: AppImageAsset.onboardingfour,body: "Fast Delivery safe  \n method Trusted our customers")
+  onboardingmodel(
+      title: "Choose Product",
+      body:
+      "We Have a 100k Product , Choose \n Your Product From  Our \n E-commerce Shop",
+      image: AppImageAsset.onBoardingImageOne),
+  onboardingmodel(
+      title: "Easy And Safe Paymnet",
+      body:
+      "We Have a 100k Product , Choose \n Your Product From Our E-commerce Shop",
+      image: AppImageAsset.onBoardingImageTwo),
+  onboardingmodel(
+      title: "Track Your Order",
+      body:
+      "We Have a 100k Product , Choose \n Your Product From Our E-commerce Shop",
+      image: AppImageAsset.onBoardingImageThree),
+  // OnBoardingModel(
+  //     title: "Fast Delivery",
+  //     body:
+  //         "We Have a 100k Product , Choose \n Your Product From Our E-commerce Shop",
+  //     image: AppImageAsset.onBoardingImageFour),
 ];

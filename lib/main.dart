@@ -1,5 +1,6 @@
 import 'package:ecommerce/Routs.dart';
 import 'package:ecommerce/core/constant/colorApp.dart';
+import 'package:ecommerce/core/localization/ChangeLocal.dart';
 import 'package:ecommerce/core/localization/Translation.dart';
 import 'package:ecommerce/core/services/servecies.dart';
 import 'package:ecommerce/view/screen/Language.dart';
@@ -13,29 +14,29 @@ void main() async{
   runApp(const MyApp());
 }
 
-
-
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+
+    LocaleController controller=   Get.put(LocaleController());
     return GetMaterialApp(
+      locale: controller.language,
       translations: MyTranslation(),
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'E-Commerce',
       routes:Routs().routes,
+
       theme: ThemeData(
         fontFamily: "fair",
         textTheme: TextTheme(
-          headline1:const TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color:AppColor.black),
-          bodyText1:const TextStyle(height: 2,color:AppColor.grey,fontSize: 20),),
-                 primarySwatch: Colors.blue,
+          headline1: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color:AppColor.black),
+          bodyText1: TextStyle(height: 2,color:AppColor.grey,fontSize: 20),),
+          primarySwatch: Colors.blue,
 
       ),
-      home: Language(),
+      home:const LanguagesView(),
     );
   }
 }
