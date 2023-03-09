@@ -5,7 +5,7 @@ class MyTranslation extends Translations {
   Map<String, Map<String, String>> get keys => {
     "ar": {
       "1": "اختر اللغة",
-      "title1": "اختر اللغة",
+      "title1": "اختر المنتج",
       "title2": "دفع سهل وآمن",
       "title3": "تبع طلبك",
        "content1": "لدينا منتج 100 ألف ، اختر \n منتجك من متجرنا \n التجارة الإلكترونية",
@@ -19,6 +19,10 @@ class MyTranslation extends Translations {
       "hittextE":"أدخل البريد الإلكترونى",
       "hitlableP":"    كلمة المرور",
   "hittextP":"أدخل   كلمة المرور",
+      "logintxt":"دخـــول",
+      "forget":"نسيت كلمة المرور",
+      "haveaccount":"ليس لديك حساب",
+      "signup":"إنشاء حساب جديد"
      },
     "en": {"1": "Choose Language",
   "title1": "Choose Product",
@@ -35,6 +39,10 @@ class MyTranslation extends Translations {
       "hittextE":"Enter Your Email",
       "hitlableP":"Password",
       "hittextP":" Enter Your Password     ",
+      "logintxt":"Sign In",
+      "forget":"Forget Password",
+      "haveaccount":"Don't Have Account",
+      "signup":"Create New Account"
      }
   };
 }

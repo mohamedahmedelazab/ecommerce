@@ -121,6 +121,11 @@ flutter:
           - asset: assets/fonts/fair/PlayfairDisplay-VariableFont_wght.ttf
             weight: 700
 
+      - family: Tajawal
+        fonts:
+          - asset: assets/fonts/Tajawal/Tajawal-Regular.ttf
+          - asset: assets/fonts/Tajawal/Tajawal-Bold.ttf
+            weight: 700
 
 
 

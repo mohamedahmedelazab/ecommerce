@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
       routes:Routs().routes,
 
       theme: ThemeData(
-        fontFamily:controller.language==Locale("en")?"fair":"cario",
+        fontFamily:controller.language==const Locale("en")?"fair":"Tajawal",
         textTheme: TextTheme(
           headline1: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color:AppColor.black),
           headline2: TextStyle(fontWeight: FontWeight.bold,fontSize: 26,color:AppColor.black),
