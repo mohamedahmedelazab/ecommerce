@@ -5,20 +5,20 @@ import 'package:get/get.dart';
 
 class LocaleController extends GetxController
 {
-    Locale language= Locale("ar");
+    Locale? language;
   MyServices myservices=Get.find();
 
     changeLang(String langcode)
   {
     Locale local=Locale(langcode);
-    myservices.sharedRefrence.setString("lang", langcode);
+    myservices.sharedPreferences.setString("lang", langcode);
     Get.updateLocale(local);
   }
 
   @override
   void onInit() {
     // TODO: implement onInit
-    String? sharedrefLang=myservices.sharedRefrence.getString("lang");
+    String? sharedrefLang=myservices.sharedPreferences.getString("lang");
     if(sharedrefLang=="ar")
       {
         language=Locale("ar");
@@ -29,7 +29,7 @@ class LocaleController extends GetxController
       }
     else
       {
-        Locale(Get.deviceLocale!.languageCode);
+        language=Locale(Get.deviceLocale!.languageCode);
       }
     super.onInit();
   }

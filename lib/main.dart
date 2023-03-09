@@ -29,10 +29,12 @@ class MyApp extends StatelessWidget {
       routes:Routs().routes,
 
       theme: ThemeData(
-        fontFamily: "fair",
+        fontFamily:controller.language==Locale("en")?"fair":"cario",
         textTheme: TextTheme(
           headline1: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color:AppColor.black),
-          bodyText1: TextStyle(height: 2,color:AppColor.grey,fontSize: 20),),
+          headline2: TextStyle(fontWeight: FontWeight.bold,fontSize: 26,color:AppColor.black),
+
+          bodyText1: TextStyle(height: 2,color:AppColor.grey,fontSize: 14),),
           primarySwatch: Colors.blue,
 
       ),

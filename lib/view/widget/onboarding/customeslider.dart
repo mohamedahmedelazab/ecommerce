@@ -19,7 +19,6 @@ class customeSlider extends GetView<OnboardingcontrollerTmp>
       itemBuilder: (BuildContext context,int i){
         return Column(children: [
           Text(onboardingmodelList[i].title,style: Theme.of(context).textTheme.headline1,),
-          SizedBox(height: 80,),
           Image.asset(onboardingmodelList[i].image,width: 250,height: 200,fit: BoxFit.fill,),
           SizedBox(height: 20,),
           Container(child: Text(onboardingmodelList[i].body,style:  Theme.of(context).textTheme.bodyText1 ,textAlign:TextAlign.center,),width: double.infinity,
