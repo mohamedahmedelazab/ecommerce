@@ -1,6 +1,5 @@
 class onboardingmodel
 {
-
   late final String title;
   late final String image;
   late final String body;
