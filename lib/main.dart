@@ -30,13 +30,25 @@ class MyApp extends StatelessWidget {
 
       theme: ThemeData(
         fontFamily:controller.language==const Locale("en")?"fair":"Tajawal",
-        textTheme: TextTheme(
-          headline1: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color:AppColor.black),
-          headline2: TextStyle(fontWeight: FontWeight.bold,fontSize: 26,color:AppColor.black),
-
-          bodyText1: TextStyle(height: 2,color:AppColor.grey,fontSize: 14),),
-          primarySwatch: Colors.blue,
-
+        textTheme:  TextTheme(
+            headline1: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 22,
+                color: AppColor.black),
+            headline2: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 26,
+                color: AppColor.black),
+            bodyText1: TextStyle(
+                height: 2,
+                color: AppColor.grey,
+                fontWeight: FontWeight.bold,
+                fontSize: 14),
+            bodyText2: TextStyle(
+                height: 2,
+                color: AppColor.grey,
+                fontSize: 14)),
+        primarySwatch: Colors.blue,
       ),
       home:const LanguagesView(), //
     );

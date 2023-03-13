@@ -18,11 +18,25 @@ class customeSlider extends GetView<OnboardingcontrollerTmp>
       itemCount: onboardingmodelList.length,
       itemBuilder: (BuildContext context,int i){
         return Column(children: [
-          Text(onboardingmodelList[i].title,style: Theme.of(context).textTheme.headline1,),
-          Image.asset(onboardingmodelList[i].image,width: 250,height: 200,fit: BoxFit.fill,),
-          SizedBox(height: 20,),
-          Container(child: Text(onboardingmodelList[i].body,style:  Theme.of(context).textTheme.bodyText1 ,textAlign:TextAlign.center,),width: double.infinity,
-            alignment: Alignment.center,),
+          Image.asset(
+            onboardingmodelList[i].image!,
+            // width: ,
+            // height: 230,
+            // fit: BoxFit.fill,
+          ),
+          const SizedBox(height: 20),
+          Text(onboardingmodelList[i].title!,
+              style: Theme.of(context).textTheme.headline1),
+          const SizedBox(height: 20),
+
+          Container(
+              width: double.infinity,
+              alignment: Alignment.center,
+              child: Text(
+                onboardingmodelList[i].body!,
+                textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.bodyText1,
+              )),
         ],);
       },
     );

@@ -3,45 +3,42 @@ import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
-abstract  class signupcontroller extends GetxController
+abstract  class CheckEmailcontroller extends GetxController
 {
-  Signup();
-  Gotosigninpage();
+  checkemail();
+  Gotosucesignup();
 }
 
-class signupcontrollerTmp extends signupcontroller
+class CheckEmailcontrollerTmp extends CheckEmailcontroller
 {
-  late TextEditingController username;
+
   late TextEditingController email;
-  late TextEditingController phone;
-  late TextEditingController password;
+
   @override
-  Gotosigninpage() {
+  Gotosucesignup() {
     // TODO: implement Gotosignuppage
-    Get.toNamed(AppRouts.login);
+    Get.toNamed(AppRouts.Gotosucesignup);
   }
   @override
   void onInit() {
     // TODO: implement onInit
-    username=TextEditingController();
+
     email=TextEditingController();
-    phone=TextEditingController();
-    password=TextEditingController();
+
     super.onInit();
   }
   @override
   void dispose() {
-    username.dispose();
+
     email.dispose();
-    phone.dispose();
-    password.dispose();
+
     // TODO: implement dispose
     super.dispose();
   }
   @override
-  Signup() {
+  checkemail() {
     // TODO: implement Login
-Get.offAllNamed(AppRouts.CheckEmail);
+    throw UnimplementedError();
   }
 
 }

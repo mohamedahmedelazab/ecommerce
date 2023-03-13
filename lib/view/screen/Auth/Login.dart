@@ -30,7 +30,7 @@ class Login extends StatelessWidget {
             SizedBox(height: 5,),
             CustomeTextheadAuth(title: "signtitle".tr,),
             SizedBox(height: 15,),
-            Container(margin: EdgeInsets.symmetric(horizontal: 25),
+            Container(margin: EdgeInsets.symmetric(horizontal: 25,vertical: 10),
                 child: CustomeTextbodyAuth(mytext: "signtitle2".tr)),
 
             CustomeTextFormAuth(hittext:"hittextE".tr ,hitlable:"hitlableE".tr ,icondata: Icons.email_outlined,mycontroller: controller.email),

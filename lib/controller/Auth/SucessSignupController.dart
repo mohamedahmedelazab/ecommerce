@@ -3,13 +3,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
-abstract  class signupcontroller extends GetxController
+abstract  class SucessSignupController extends GetxController
 {
   Signup();
   Gotosigninpage();
 }
 
-class signupcontrollerTmp extends signupcontroller
+class SucessSignupControllerTmp extends SucessSignupController
 {
   late TextEditingController username;
   late TextEditingController email;
@@ -41,7 +41,7 @@ class signupcontrollerTmp extends signupcontroller
   @override
   Signup() {
     // TODO: implement Login
-Get.offAllNamed(AppRouts.CheckEmail);
+    Get.offAllNamed(AppRouts.CheckEmail);
   }
 
 }

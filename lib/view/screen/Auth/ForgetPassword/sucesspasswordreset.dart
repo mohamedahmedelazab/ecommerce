@@ -1,14 +1,15 @@
-import 'package:ecommerce/controller/Auth/SucessSignupController.dart';
+import 'package:ecommerce/controller/Auth/SuccessResetpasswordController.dart';
 import 'package:ecommerce/core/constant/colorApp.dart';
 import 'package:ecommerce/view/widget/Auth/CustomButtomAuth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-class sucessignup extends StatelessWidget {
-  const sucessignup({Key? key}) : super(key: key);
+class sucesspasswordreset extends StatelessWidget {
+  const sucesspasswordreset({Key? key}) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
-    SucessSignupControllerTmp controller=Get.put(SucessSignupControllerTmp());
+    SuccessResetpasswordControllerTmp controller=Get.put(SuccessResetpasswordControllerTmp());
     return Scaffold(appBar:  AppBar(
       centerTitle: true,
       backgroundColor: AppColor.backgroundcolor,elevation: 0.1,
@@ -23,15 +24,15 @@ class sucessignup extends StatelessWidget {
             children: [
               Icon(Icons.check_circle_outline,color: AppColor.primary,size: 200,),
               Text("checkmailsucess".tr),
-            Spacer(),
-            Container(width: double.infinity,
-            child:   CustomButtomAuth(text: "logintxt".tr,onPressed: (){
-              controller.Gotosigninpage();
+              Spacer(),
+              Container(width: double.infinity,
+                child:   CustomButtomAuth(text: "logintxt".tr,onPressed: (){
+                  controller.Gotosigninpage();
 
-            }),
+                }),
 
-            ),
-           SizedBox(height: 30,)
+              ),
+              SizedBox(height: 30,)
             ],
           ),
         )

@@ -40,8 +40,13 @@ class MyTranslation extends Translations {
       "hittextRP":" كلمة المرور الجديدة",
       "hitlableRP":"أدخل كلمة المرور الجديدة",
       "hitlableRP2":" إعادة كلمة المرورالجديدة",
-      "hittextRP2":"أدخل اعادة كلمة المرور الجديدة"
-     },
+      "hittextRP2":"أدخل اعادة كلمة المرور الجديدة",
+      "checkmailtitle":"التحقق من البريد الألكترونى ",
+      "checkmailtitle2":"أكتب الكود المرسل علي بريدك الألكترونى",
+      "checkmailbtn":"تحقق ",
+      "sucess":"تم التحقق بنجاح",
+      "checkmailsucess":"تم التأكد من صحة البريد الإلكترونى بنجاح"
+    },
     "en": {"1": "Choose Language",
       "title1": "Choose Product",
       "title2": "Easy And Safe Payment",
@@ -78,7 +83,12 @@ class MyTranslation extends Translations {
       "hittextRP":" Your New Password",
 "hitlableRP":"Enter Your New Password",
       "hitlableRP2":"Your RE-Password",
-      "hittextRP2":"Enter Your RE-Password"
+      "hittextRP2":"Enter Your RE-Password",
+      "checkmailtitle":"Check Your Email ",
+      "checkmailtitle2":"write code sent to your Email",
+      "checkmailbtn":"Check ",
+      "sucess":"sucess",
+      "checkmailsucess":"check Email Success "
      }
   };
 }

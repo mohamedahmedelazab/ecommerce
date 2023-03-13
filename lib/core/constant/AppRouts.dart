@@ -7,5 +7,8 @@ class AppRouts
   static String  verifycode="/verifycode";
   static String resetpassword="/resetpassword";
   static String sucesspasswordreset="/sucesspasswordreset";
+  static String Gotosucesignup="/Gotosucesignup";
+  static String CheckEmail="/CheckEmail";
+
 
 }

@@ -41,7 +41,9 @@ class Signup extends StatelessWidget {
 
 /*              InkWell(child: Text("forget".tr,style: TextStyle(color: AppColor.primary,fontWeight: FontWeight.bold),),),
 */
-              CustomButtomAuth(text: "signup".tr,onPressed: (){}),
+              CustomButtomAuth(text: "signup".tr,onPressed: (){
+                controller.Signup();
+              }),
               SizedBox(height: 30,),
               custometextsignuporsignin(text1: "haveaccount".tr,text2: "sign".tr,ontab: (){
                 controller.Gotosigninpage();
