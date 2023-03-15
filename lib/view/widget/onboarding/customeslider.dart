@@ -21,8 +21,9 @@ class customeSlider extends GetView<OnboardingcontrollerTmp>
           Image.asset(
             onboardingmodelList[i].image!,
             // width: ,
-            // height: 230,
-            // fit: BoxFit.fill,
+              height: Get.width/1.3,
+
+             fit: BoxFit.fill,
           ),
           const SizedBox(height: 20),
           Text(onboardingmodelList[i].title!,

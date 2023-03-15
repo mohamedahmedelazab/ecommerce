@@ -3,19 +3,19 @@ import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
-abstract  class CheckEmailcontroller extends GetxController
+abstract  class verifycodesigncontroller extends GetxController
 {
-  checkemail();
-  Gotosucesignup();
+  checkcode();
+  Gotorestcode();
 }
 
-class CheckEmailcontrollerTmp extends CheckEmailcontroller
+class verifycodesigncontrollerTmp extends verifycodesigncontroller
 {
 
-  late TextEditingController email;
 
+  late String verifycode;
   @override
-  Gotosucesignup() {
+  Gotorestcode() {
     // TODO: implement Gotosignuppage
     Get.toNamed(AppRouts.Gotosucesignup);
   }
@@ -23,20 +23,17 @@ class CheckEmailcontrollerTmp extends CheckEmailcontroller
   void onInit() {
     // TODO: implement onInit
 
-    email=TextEditingController();
 
     super.onInit();
   }
   @override
   void dispose() {
 
-    email.dispose();
-
     // TODO: implement dispose
     super.dispose();
   }
   @override
-  checkemail() {
+  checkcode() {
     // TODO: implement Login
     throw UnimplementedError();
   }

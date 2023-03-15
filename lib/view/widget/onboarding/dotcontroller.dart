@@ -11,7 +11,10 @@ class customedotcontroller extends StatelessWidget
     // TODO: implement build
    return
      GetBuilder<OnboardingcontrollerTmp>(builder: (OnboardingcontrollerTmp){
-       return  Row(   mainAxisAlignment: MainAxisAlignment.center,
+       return
+         Row(
+
+         mainAxisAlignment: MainAxisAlignment.center,
          children: [
            ...List.generate(onboardingmodelList.length,
                (index) =>AnimatedContainer(

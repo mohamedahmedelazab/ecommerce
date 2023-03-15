@@ -1,4 +1,6 @@
 import 'package:ecommerce/Routs.dart';
+import 'package:ecommerce/binding.dart';
+import 'package:ecommerce/core/constant/Apptheme.dart';
 import 'package:ecommerce/core/constant/colorApp.dart';
 import 'package:ecommerce/core/localization/ChangeLocal.dart';
 import 'package:ecommerce/core/localization/Translation.dart';
@@ -21,35 +23,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
     LocaleController controller=   Get.put(LocaleController());
+
     return GetMaterialApp(
       locale: controller.language,
       translations: MyTranslation(),
       debugShowCheckedModeBanner: false,
       title: 'E-Commerce',
       routes:Routs().routes,
-
-      theme: ThemeData(
-        fontFamily:controller.language==const Locale("en")?"fair":"Tajawal",
-        textTheme:  TextTheme(
-            headline1: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 22,
-                color: AppColor.black),
-            headline2: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 26,
-                color: AppColor.black),
-            bodyText1: TextStyle(
-                height: 2,
-                color: AppColor.grey,
-                fontWeight: FontWeight.bold,
-                fontSize: 14),
-            bodyText2: TextStyle(
-                height: 2,
-                color: AppColor.grey,
-                fontSize: 14)),
-        primarySwatch: Colors.blue,
-      ),
+initialBinding: MyBinding(),
+      theme:controller.apptheme,
       home:const LanguagesView(), //
     );
   }

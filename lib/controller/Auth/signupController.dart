@@ -15,6 +15,8 @@ class signupcontrollerTmp extends signupcontroller
   late TextEditingController email;
   late TextEditingController phone;
   late TextEditingController password;
+
+  GlobalKey<FormState> formstate_up=GlobalKey<FormState>();
   @override
   Gotosigninpage() {
     // TODO: implement Gotosignuppage
@@ -41,7 +43,14 @@ class signupcontrollerTmp extends signupcontroller
   @override
   Signup() {
     // TODO: implement Login
-Get.offAllNamed(AppRouts.CheckEmail);
+    var formstat=formstate_up.currentState;
+    if(formstat!.validate())
+      {
+        Get.offAllNamed(AppRouts.verifycodesign);
+      }
+    else {
+      //
+    }
   }
 
 }

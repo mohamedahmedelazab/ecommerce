@@ -45,7 +45,17 @@ class MyTranslation extends Translations {
       "checkmailtitle2":"أكتب الكود المرسل علي بريدك الألكترونى",
       "checkmailbtn":"تحقق ",
       "sucess":"تم التحقق بنجاح",
-      "checkmailsucess":"تم التأكد من صحة البريد الإلكترونى بنجاح"
+      "checkmailsucess":"تم التأكد من صحة البريد الإلكترونى بنجاح",
+      "validemail":"البريد الإلكترونى غير صحيح",
+      "validephone":"رقم الهاتف غير صحيح",
+      "valideempty":"الحقل فارغ",
+      "valideusername":"إسم الدخول غير صحيح",
+      "validemin":"يجب الا يقل عن ",
+      "validemax":"يجب الا يزيد عن ",
+      "alerttitle":"تنبيه",
+      "alerttext":"هل تريد الخروج من البرنامج ؟",
+      "alertconfirm":"تأكيد",
+      "alertcancel":"إلغاء"
     },
     "en": {"1": "Choose Language",
       "title1": "Choose Product",
@@ -81,14 +91,24 @@ class MyTranslation extends Translations {
       "resetttitle":"Please Rest New Password",
       "resetbtn":"save ",
       "hittextRP":" Your New Password",
-"hitlableRP":"Enter Your New Password",
+       "hitlableRP":"Enter Your New Password",
       "hitlableRP2":"Your RE-Password",
       "hittextRP2":"Enter Your RE-Password",
       "checkmailtitle":"Check Your Email ",
       "checkmailtitle2":"write code sent to your Email",
       "checkmailbtn":"Check ",
       "sucess":"sucess",
-      "checkmailsucess":"check Email Success "
+      "checkmailsucess":"check Email Success ",
+  "validemail":"Not Invalid email",
+  "validephone":"Not Invalid Phone Number",
+  "valideempty":"Can't be Empty",
+  "valideusername":"Not Invalid User Name",
+  "validemin":"Can't be less than",
+  "validemax":"Can't be larger than",
+      "alerttitle":"Alert",
+      "alerttext":"Do you want to exit the program?",
+      "alertconfirm":"confirm",
+      "alertcancel":"cancel"
      }
   };
 }

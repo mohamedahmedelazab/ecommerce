@@ -33,7 +33,11 @@ class ForgetPassword extends StatelessWidget {
                   child: CustomeTextbodyAuth(mytext: "forgettitle2".tr)),
               SizedBox(height: 15,),
 
-              CustomeTextFormAuth(hittext:"hittextE".tr ,hitlable:"hitlableE".tr ,icondata: Icons.email_outlined,mycontroller: controller.email,),
+              CustomeTextFormAuth( validat:(val){
+
+              },
+                isNumber:false,
+                hittext:"hittextE".tr ,hitlable:"hitlableE".tr ,icondata: Icons.email_outlined,mycontroller: controller.email,),
 
 /*              InkWell(child: Text("forget".tr,style: TextStyle(color: AppColor.primary,fontWeight: FontWeight.bold),),),
 */

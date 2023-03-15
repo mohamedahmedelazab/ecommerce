@@ -4,8 +4,8 @@ import 'package:ecommerce/view/screen/Auth/Signup.dart';
 import 'package:ecommerce/view/screen/Auth/ForgetPassword/Verviycode.dart';
 import 'package:ecommerce/view/screen/Auth/ForgetPassword/resetpassword.dart';
 import 'package:ecommerce/view/screen/Auth/ForgetPassword/sucesspasswordreset.dart';
-import 'package:ecommerce/view/screen/Auth/checkemail.dart';
 import 'package:ecommerce/view/screen/Auth/sucesssignup.dart';
+import 'package:ecommerce/view/screen/Auth/verifycodesign.dart';
 import 'package:ecommerce/view/screen/Onboarding.dart';
 import 'package:flutter/material.dart';
 
@@ -24,8 +24,7 @@ class Routs
     AppRouts.resetpassword:(context)=>resetpassword(),
     AppRouts.sucesspasswordreset:(context)=>sucesspasswordreset(),
     AppRouts.Gotosucesignup:(context)=>sucessignup(),
-    AppRouts.CheckEmail:(context)=>CheckEmail(),
-
+    AppRouts.verifycodesign:(context)=>verifycodesign(),
 
   };
 }

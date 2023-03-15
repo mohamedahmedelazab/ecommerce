@@ -9,6 +9,6 @@ class AppRouts
   static String sucesspasswordreset="/sucesspasswordreset";
   static String Gotosucesignup="/Gotosucesignup";
   static String CheckEmail="/CheckEmail";
-
+  static String verifycodesign="/verifycodesign";
 
 }

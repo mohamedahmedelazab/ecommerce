@@ -12,5 +12,5 @@ class AppColor
   static  Color accentPinkColor = Color(0xFFF99BBD);
   static  Color accentDarkGreenColor = Color(0xFF115C49);
   static  Color accentYellowColor = Color(0xFFFFB612);
-  static Color accentOrangeColor = Color(0xFFEA7A3B);
+  Color accentOrangeColor = Color(0xFFEA7A3B);
 }

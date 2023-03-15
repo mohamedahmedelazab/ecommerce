@@ -9,7 +9,9 @@ class customebutton extends GetView<OnboardingcontrollerTmp>
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Container(height: 40, child:
+    return Container(
+      width: double.infinity,
+      height: 40, child:
     MaterialButton(child: Text("continue".tr,style: TextStyle(fontSize: 16, color: Colors.white),),onPressed: (){
       controller.next();
 

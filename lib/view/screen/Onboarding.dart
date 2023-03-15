@@ -15,21 +15,24 @@ class Onboarding extends StatelessWidget
    return Scaffold(
    body: SafeArea(
     child: Container(
-     padding: EdgeInsets.all(10,),
+
      child: Column(
      children: [
        Expanded(
-         flex: 2,
+         flex: 4,
          child: customeSlider(),
        ),
+
+
        Expanded(
            flex: 1,
-           child:Column(
+           child:Container(padding: EdgeInsets.symmetric(vertical: 20),child: Column(
              mainAxisAlignment: MainAxisAlignment.center,
              children: [
-           customedotcontroller(),
-           Spacer(flex: 2,),
-           customebutton()],))
+               customedotcontroller(),
+
+               Spacer(),
+               customebutton()],)),)
      ],)
    )
    )

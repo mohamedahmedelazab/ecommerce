@@ -15,27 +15,22 @@ class sucessignup extends StatelessWidget {
       title: Text("sucess".tr,style: Theme.of(context).textTheme.headline1!.copyWith(color:AppColor.grey ),),
     ),
 
-      body: Container(padding: EdgeInsets.all(20),
-        child:
-        Center(
-          child: Column(
+      body:Center(
+        child: Column(
+          children: [
+            Icon(Icons.check_circle_outline,color: AppColor.primary,size: 200,),
+            Text("checkmailsucess".tr),
+          const Spacer(),
+          SizedBox(width: double.infinity,
+          child:   CustomButtomAuth(text: "logintxt".tr,onPressed: (){
+            controller.Gotosigninpage();
 
-            children: [
-              Icon(Icons.check_circle_outline,color: AppColor.primary,size: 200,),
-              Text("checkmailsucess".tr),
-            Spacer(),
-            Container(width: double.infinity,
-            child:   CustomButtomAuth(text: "logintxt".tr,onPressed: (){
-              controller.Gotosigninpage();
+          }),
 
-            }),
-
-            ),
-           SizedBox(height: 30,)
-            ],
           ),
-        )
-
-        ,),);
+         const SizedBox(height: 20,)
+          ],
+        ),
+      ),);
   }
 }
