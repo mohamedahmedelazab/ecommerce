@@ -1,3 +1,4 @@
+import 'package:ecommerce/controller/Auth/signinController.dart';
 import 'package:ecommerce/controller/Auth/signupController.dart';
 import 'package:ecommerce/core/constant/colorApp.dart';
 import 'package:ecommerce/core/function/alertExitAppF.dart';
@@ -85,16 +86,20 @@ class Signup extends StatelessWidget {
                       icondata: Icons.phone_android_outlined,
                       mycontroller: controller.phone,
                     ),
-                    CustomeTextFormAuth(
-                      isNumber: false,
-                      validat: (val) {
-                        return validInput(val!, 5, 20, "password");
-                      },
-                      hittext: "hittextP".tr,
-                      hitlable: "hitlableP".tr,
-                      icondata: Icons.lock_clock_outlined,
-                      mycontroller: controller.password,
-                    ),
+                GetBuilder<signincontrollerTmp>(builder:(controller)=>     CustomeTextFormAuth(
+                  obscureText: controller.isShowpassword,
+                  isNumber: false,
+                  validat: (val) {
+                    return validInput(val!, 5, 20, "password");
+                  },
+                  hittext: "hittextP".tr,
+                  hitlable: "hitlableP".tr,
+                  onTapIcon:(){
+                   controller.changeshow();
+                  }
+                  ,icondata: Icons.lock_clock_outlined,
+                  mycontroller: controller.password,
+                ) ),
 
 /*              InkWell(child: Text("forget".tr,style: TextStyle(color: AppColor.primary,fontWeight: FontWeight.bold),),),
 */

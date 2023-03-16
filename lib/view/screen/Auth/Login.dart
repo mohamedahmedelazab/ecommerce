@@ -62,11 +62,12 @@ class Login extends StatelessWidget {
                     hitlable: "hitlableE".tr,
                     icondata: Icons.email_outlined,
                     mycontroller: controller.email),
-               GetBuilder<signincontrollerTmp>(builder: (controller)=> CustomeTextFormAuth(
+               GetBuilder<signincontrollerTmp>(builder: (controller)=>
+                   CustomeTextFormAuth(
                    onTapIcon: () {
-                     controller.showPassword();
+                     controller.changeshow();
                    },
-                   obscureText:controller.isshowpassword,
+                   obscureText:controller.isShowpassword,
                    isNumber:false,
                    validat: (val) {
                      return validInput(val!,2,20,"password");

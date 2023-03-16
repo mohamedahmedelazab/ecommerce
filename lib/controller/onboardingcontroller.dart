@@ -1,4 +1,5 @@
 import 'package:ecommerce/core/constant/AppRouts.dart';
+import 'package:ecommerce/core/services/servecies.dart';
 import 'package:ecommerce/data/datasource/static/static.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
@@ -14,22 +15,22 @@ class OnboardingcontrollerTmp extends Onboardingcontroller
 
 int CurrentPage=0;
 late PageController pageController;
-
+MyServices myServices=Get.find();
 @override
 void onInit() {
   // TODO: implement onInit
   pageController= PageController();
-  super.onInit();
+   super.onInit();
 }
  @override
  next() {
-    // TODO: implement next
+    // Shared Refrence From serve
+
    CurrentPage++;
     if(CurrentPage > onboardingmodelList.length-1)
       {
-       // Get.to(page)
-      //  print("last page");
-        Get.offNamed(AppRouts.login);
+        myServices.sharedPreferences.setString("onboarding", "1");
+         Get.offNamed(AppRouts.login);
       }
     else
       {

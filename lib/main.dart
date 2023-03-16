@@ -1,12 +1,9 @@
 import 'package:ecommerce/Routs.dart';
 import 'package:ecommerce/binding.dart';
-import 'package:ecommerce/core/constant/Apptheme.dart';
-import 'package:ecommerce/core/constant/colorApp.dart';
 import 'package:ecommerce/core/localization/ChangeLocal.dart';
 import 'package:ecommerce/core/localization/Translation.dart';
 import 'package:ecommerce/core/services/servecies.dart';
 import 'package:ecommerce/view/screen/Language.dart';
-import 'package:ecommerce/view/screen/Onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -29,10 +26,11 @@ class MyApp extends StatelessWidget {
       translations: MyTranslation(),
       debugShowCheckedModeBanner: false,
       title: 'E-Commerce',
-      routes:Routs().routes,
-initialBinding: MyBinding(),
+      //routes:Routs().routes,
+      getPages: Routs().routes,
+      initialBinding: MyBinding(),
       theme:controller.apptheme,
-      home:const LanguagesView(), //
+
     );
   }
 }

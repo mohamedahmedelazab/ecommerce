@@ -8,25 +8,25 @@ abstract  class signincontroller extends GetxController
   Login();
   Gotosignuppage();
   gotoforgetpassword();
-
 }
 
 class signincontrollerTmp extends signincontroller
 {
-  GlobalKey<FormState> formstate=GlobalKey<FormState>();
   late TextEditingController email;
   late TextEditingController password;
+  GlobalKey<FormState> formstate=GlobalKey<FormState>();
+  bool isShowpassword=true;
+  changeshow()
+  {
+    isShowpassword=isShowpassword==true?false:true;
+    update();
+  }
   @override
   Gotosignuppage() {
     // TODO: implement Gotosignuppage
    Get.toNamed(AppRouts.Signup);
   }
-  bool isshowpassword = true;
 
-  showPassword() {
-    isshowpassword = isshowpassword == true ? false : true;
-    update();
-  }
   gotoforgetpassword()
   {
   Get.toNamed(AppRouts.forgetpassword);
@@ -48,15 +48,7 @@ class signincontrollerTmp extends signincontroller
   @override
   Login() {
     // TODO: implement Login
-var formstat=formstate.currentState;
-if(formstat!.validate())
-  {
-    return "valid";
-  }
-else
-  {
-    return "Not valid";
-  }
+    throw UnimplementedError();
   }
 
 }

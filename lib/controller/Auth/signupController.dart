@@ -16,6 +16,7 @@ class signupcontrollerTmp extends signupcontroller
   late TextEditingController phone;
   late TextEditingController password;
 
+
   GlobalKey<FormState> formstate_up=GlobalKey<FormState>();
   @override
   Gotosigninpage() {
