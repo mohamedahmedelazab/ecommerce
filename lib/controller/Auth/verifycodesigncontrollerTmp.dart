@@ -11,8 +11,6 @@ abstract  class verifycodesigncontroller extends GetxController
 
 class verifycodesigncontrollerTmp extends verifycodesigncontroller
 {
-
-
   late String verifycode;
   @override
   Gotorestcode() {

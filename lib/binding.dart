@@ -1,4 +1,5 @@
 import 'package:ecommerce/controller/Auth/signupController.dart';
+import 'package:ecommerce/core/class/crud.dart';
 import 'package:get/get.dart';
 
 class MyBinding extends Bindings
@@ -7,6 +8,7 @@ class MyBinding extends Bindings
   void dependencies() {
     // TODO: implement dependencies
     Get.lazyPut(()=>signupcontrollerTmp(),fenix: true);
+    Get.put(Crud());
   }
 
 }

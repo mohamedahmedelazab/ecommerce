@@ -4,7 +4,6 @@ import 'package:ecommerce/core/constant/colorApp.dart';
 import 'package:ecommerce/core/function/alertExitAppF.dart';
 import 'package:ecommerce/core/function/validInput.dart';
 import 'package:ecommerce/view/widget/Auth/CustomButtomAuth.dart';
-import 'package:ecommerce/view/widget/Auth/CustomeLogoAuth.dart';
 import 'package:ecommerce/view/widget/Auth/CustomeTextAuth.dart';
 import 'package:ecommerce/view/widget/Auth/CustomeTextbodyAuth.dart';
 import 'package:ecommerce/view/widget/Auth/CustomeTextheadAuth.dart';
